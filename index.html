@@ -1,0 +1,97 @@
+<html>
+
+<head>
+    <title>Task</title>
+    <link rel='stylesheet' href='./style.css'>
+</head>
+
+<body>
+    <div class="everything">
+        <h1>My Cart</h1>
+        <svg width="100" height="5">
+            <rect width="80" height="5" style="fill:rgba(0, 123, 255,1);stroke-width:3;stroke:rgba(0, 123, 255,1);" />
+        </svg>
+        <div class="allItems">
+            <div class="box">
+
+                <div class="img1">
+                    <img src="Rectangle 2.png">
+                </div>
+                <div class="column">
+                    <div class="name">
+                        <p>Red T-Shirt</p>
+                    </div>
+                    <div class="row">
+                        <p class="new">120$</p>
+                        <p class="old">150$</p>
+                    </div>
+                </div>
+                <div class="right">
+                    <div class="img2">
+                        <img src="Dell.svg">
+                    </div>
+                    <div class="buttons">
+                        <button class="decrement">-</button>
+                        <button class="number" id="product1">1</button>
+                        <button class="increment">+</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box">
+
+                <div class="img1">
+                    <img src="black.png">
+                </div>
+                <div class="column">
+                    <div class="name">
+                        <p>Red T-Shirt</p>
+                    </div>
+                    <div class="row">
+                        <p class="new">130$</p>
+                        <p class="old">180$</p>
+                    </div>
+                </div>
+                <div class="right">
+                    <div class="img2">
+                        <img src="Dell.svg">
+                    </div>
+                    <div class="buttons">
+                        <button class="decrement" onclick="decrementWithClosest(2)">-</button>
+                        <button class="number" id="product2">1</button>
+                        <button class="increment" onclick="incrementWithQuerySelector(2)">+</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box">
+
+                <div class="img1">
+                    <img src="blue.png">
+                </div>
+                <div class="column">
+                    <div class="name">
+                        <p>Red T-Shirt</p>
+                    </div>
+                    <div class="row">
+                        <p class="new">160$</p>
+                        <p class="old">200$</p>
+                    </div>
+                </div>
+                <div class="right">
+                    <div class="img2">
+                        <img src="Dell.svg">
+                    </div>
+                    <div class="buttons">
+                        <button class="decrement" onclick="decrementWithClosest(3)">-</button>
+                        <button class="number" id="product3">1</button>
+                        <button class="increment" onclick="incrementWithQuerySelector(3)">+</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src='script.js'></script>
+
+</html>
